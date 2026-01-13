@@ -106,7 +106,7 @@
                         @forelse($destinations as $dest)
                         <tr>
                             <td class="ps-4">
-                                <img src="{{ asset('storage/' . $dest->gambar) }}" onerror="this.onerror=null;this.src='{{ asset('images/default.jpg') }}';">
+                                <img src="{{ asset('storage/' . $dest->gambar) }}" >
                             </td>
                             <td><span class="fw-bold">{{ $dest->nama_destinasi }}</span></td>
                             <td><span class="badge bg-info text-dark">{{ $dest->category->nama_kategori ?? 'Umum' }}</span></td>
